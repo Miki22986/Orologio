@@ -6,18 +6,29 @@
     <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
-    <header>
-        <h1>World Clock </h1>
-        <h3>Scegli la città e scopri l'ora</h3>
-    </header>
-    <main>
-        <select id="cities">
-            <option value="Tokyo" id="tokyo">Tokyo</option>
-            <option value="Roma" id="Roma"> Roma</option>
-        </select>
-    </main>
-    <footer>
-        <div class="link_utility">Code by <a href="http://">Elisa</a>, hosted by <a href="http://">GhitHub</a></div>
-    </footer>
+    <div class="container">
+        <header>
+            <h1>World Clock </h1>
+            <h3>Scegli la città e scopri l'ora</h3>
+            <select id="cities">
+                <option value="Tokyo" id="tokyo">Tokyo</option>
+                <option value="Roma" id="Roma"> Roma</option>
+            </select>
+        </header>
+        <main>
+            <div id="3_cities">
+                <div class="display"></div>
+                <div class="display"></div>
+                <div class="display"></div>
+            </div>
+            <div id="orologio">
+                <img src="" alt="">
+            </div>
+        </main>
+        <footer>
+            <div class="links">Code by <a href="https://www.shecodes.io/graduates/156421-elisa-simi">Elisa</a>, hosted by <a href="http://">GitHub</a></div>
+        </footer>
+    </div>
+    <script src="src/index.js"></script>
 </body>
 </html>
