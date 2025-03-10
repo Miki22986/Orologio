@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.container{
+    margin: 20px auto;
+    max-width: 500px;
+    background-image: url("../img/nasa_world.jpg");
+    background-size: cover;
+    border-radius: 20px;
+}
+/* Header */
+h1{
+    padding: 30px 0 20px 0;
+    font-size: 45px;
+}
+h3{
+    padding-bottom: 15px;
+    font-size: 20px;
+    font-style: italic;
+}
+select{
+    display: inline-block;
+    width: 450px;
+    height: 30px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+}
+select, option{
+        color: black;
+}
