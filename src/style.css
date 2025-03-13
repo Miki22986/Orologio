@@ -42,6 +42,10 @@ main{
     justify-content: space-between;
     color: black;
 }
+img {
+    display: block;
+    max-width: 200px;
+}
 .display{
     margin: 10px;
 }
@@ -53,6 +57,11 @@ main{
     max-width: 200px;
     border-radius: 30px;
     padding: 10px;
+}
+#orologio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 /* footer */
 footer, header{
