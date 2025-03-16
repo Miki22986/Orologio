@@ -1,4 +1,4 @@
-setInterval(function(){
+function updateRome(){
     let RomeElement = document.querySelector("#rome");
     let RomeData = RomeElement.querySelector(".data");
     let ora = RomeElement.querySelector(".ora");
@@ -6,9 +6,11 @@ setInterval(function(){
 
     RomeData.innerHTML= Rome.format("MMMM Do YYYY");
     ora.innerHTML = Rome.format("h:mm:ss [<small>]A[</small>]");
-});
+}
+updateRome();
+setInterval(updateRome, 1000);
 
-setInterval(function(){
+function updateLosAngeles(){
     let losAngelesElement = document.querySelector("#los-angeles");
     let losAngelesDateElement = losAngelesElement.querySelector(".data");
     let losAngelesTimeElement = losAngelesElement.querySelector(".ora");
@@ -16,4 +18,5 @@ setInterval(function(){
 
     losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
     losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]A[</small>]" );
-});
+}
+setInterval(updateLosAngeles, 1000);

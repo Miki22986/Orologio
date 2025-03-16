@@ -46,11 +46,16 @@ img {
     display: block;
     max-width: 200px;
 }
+hr{
+    margin-top: 10px;
+}
 .display{
     margin: 10px;
 }
 .ora{
     font-weight: bold;
+    font-size: 20px;
+    margin: 5px;
 }
 #two_cities{
     background-color: rgba(255, 255, 255, 0.8);
