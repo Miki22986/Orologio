@@ -71,9 +71,10 @@ hr{
 
 #one_city{
     background-color: rgba(255, 255, 255, 0.8);
-    max-width: 400px;
+   width: 450px;
     border-radius: 30px;
     padding: 10px;
+    display: inline-block;
 }
 /* footer */
 footer, header{
