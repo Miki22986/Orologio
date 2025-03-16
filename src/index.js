@@ -20,3 +20,27 @@ function updateLosAngeles(){
     losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]A[</small>]" );
 }
 setInterval(updateLosAngeles, 1000);
+
+function updateCity(event) {
+  let cityTimeZone = event.target.value;
+  if (cityTimeZone === "current") {
+    cityTimeZone = moment.tz.guess();
+  }
+  let cityName = cityTimeZone.replace("_", " ").split("/")[1];
+  let cityTime = moment().tz(cityTimeZone);
+  let cities = document.querySelector("main");
+  cities.innerHTML = `
+  <div id="one_city">
+   <div class="display">
+      <h2 class="NameCity">${cityName}</h2>
+      <div class="data">${cityTime.format("MMMM	Do YYYY")}</div>
+    </div>
+    <div class="ora">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
+    "A"
+  )}</small></div>
+  </div>
+  `;
+}
+
+let choseCity = document.querySelector("#cities");
+choseCity.addEventListener("change", updateCity);
