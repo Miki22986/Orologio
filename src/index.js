@@ -1,7 +1,8 @@
-let roma = document.querySelector("#roma");
-let data = roma.querySelector(".data");
-let ora = roma.querySelector(".ora");
-let city_rome = moment().tz("Europe/Rome");
 
-data.innerHTML = city_rome.format("MMMM	Do YYYY");
-ora.innerHTML = city_rome.format("h:mm:ss [<small>]A[</small>]");
+let data = document.querySelector("#dataRoma");
+let ora = document.querySelector("#oraRoma");
+let Rome = moment().tz("Europe/Rome");
+
+ data.innerHTML= Rome.format("MMMM	Do YYYY");
+ ora.innerHTML = Rome.format("h:mm:ss [<small>]A[</small>]");
+
