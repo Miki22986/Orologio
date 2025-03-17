@@ -42,12 +42,13 @@ main{
     justify-content: space-between;
     color: black;
 }
-img {
-    display: block;
-    max-width: 200px;
-}
 hr{
     margin-top: 10px;
+}
+#titolo_orologio{
+    color:white;
+    font-weight: bold;
+    font-size: 30px;
 }
 .display{
     margin: 10px;
@@ -63,35 +64,50 @@ hr{
     border-radius: 30px;
     padding: 10px;
 }
-#orologio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-#orologio_base{
-    background-image: url('../img/orologio.gif'); 
-    z-index:0;
-}
-#ore{
-    background-image: url('../img/ore.gif'); 
-    z-index:1;
-}
-#minuti{
-    background-image: url('../img/minuti.gif'); 
-    z-index:2;
-}
-#secondi{
-    background-image: url('../img/secondi.gif'); 
-    z-index:3;
+#orologio {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    margin: auto;
 }
 
-#one_city{
-    background-color: rgba(255, 255, 255, 0.8);
-   width: 450px;
-    border-radius: 30px;
-    padding: 10px;
-    display: inline-block;
+.orologio-layer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    transform-origin: 50% 50%;
+    transform: translate(-50%, -50%);
 }
+
+#orologio_base {
+    background-image: url("../img/orologio.gif");
+    z-index: 1;
+}
+
+#ore {
+    background-image: url("../img/ore.gif");
+    background-size: 4%;
+    z-index: 2;
+}
+
+#minuti {
+    background-image: url("../img/minuti.gif");
+    background-size: 4%;
+    z-index: 3;
+}
+
+#secondi {
+    background-image: url("../img/secondi.gif");
+    background-size: 6%;
+    z-index: 4;
+}
+
+
 /* footer */
 footer, header{
     padding: 10px;
