@@ -18,7 +18,10 @@
                 <option value="Asia/Tokyo" >Tokyo</option>
                 <option value="Europe/London" > Londra</option>
                 <option value="America/New_York" > New_York</option>
-                <option value="Asia/Seoul" > Seoul</option>
+                <option value="Asia/Seoul" > Seoul </option>
+                <option value="Europe/Berlin" > Berlino </option>
+                <option value="Europe/Istanbul" > Instambul </option>
+                <option value="Australia/Sydney" > Sydney </option>
             </select>
             <hr>
         </header>
@@ -37,7 +40,12 @@
                 </div>
             </div>
             <div id="orologio">
-                <img src="img/orologio.gif" alt="Clock">
+                <div style="position: absolute;">
+                    <div  id="orologio_base"></div>
+                    <div id="ore"> </div>
+                    <div id="minuti"></div>
+                    <div id="secondi"></div>
+                </div>
             </div>
         </main>
         <footer>

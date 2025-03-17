@@ -68,6 +68,22 @@ hr{
     align-items: center;
     justify-content: center;
 }
+#orologio_base{
+    background-image: url('../img/orologio.gif'); 
+    z-index:0;
+}
+#ore{
+    background-image: url('../img/ore.gif'); 
+    z-index:1;
+}
+#minuti{
+    background-image: url('../img/minuti.gif'); 
+    z-index:2;
+}
+#secondi{
+    background-image: url('../img/secondi.gif'); 
+    z-index:3;
+}
 
 #one_city{
     background-color: rgba(255, 255, 255, 0.8);
