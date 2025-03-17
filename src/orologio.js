@@ -4,7 +4,8 @@ function aggiornaOrologio() {
   let minuti = ora.getMinutes();
   let secondi = ora.getSeconds();
 
-  let rotazioneOre = ore * 30 + minuti / 2; //360 gradi → 360° / 12 = 30° per ora
+  let rotazioneOre = ore * 30 + minuti / 2;
+  //ogni orologio ha 360 gradi → 360° / 12 = 30° per ora. Quindi moltiplicando 30 all'ora (tipo le 3), si arriva a dove si posizione la lancetta , + i minuti
   let rotazioneMinuti = minuti * 6;
   let rotazioneSecondi = secondi * 6;
 
