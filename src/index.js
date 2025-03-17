@@ -19,6 +19,7 @@ function updateLosAngeles(){
     losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
     losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]A[</small>]" );
 }
+updateLosAngeles();
 setInterval(updateLosAngeles, 1000);
 
 function updateCity(event) {
@@ -41,7 +42,6 @@ function updateCity(event) {
   </div>
   `;
 }
-updateCity();
-setInterval(updateCity, 1000);
+
 let choseCity = document.querySelector("#cities");
 choseCity.addEventListener("change", updateCity);
