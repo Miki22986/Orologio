@@ -1,23 +1,25 @@
-function updateRome(){
-    let RomeElement = document.querySelector("#rome");
-    let RomeData = RomeElement.querySelector(".data");
-    let ora = RomeElement.querySelector(".ora");
-    let Rome = moment().tz("Europe/Rome");
+function updateRome() {
+  let RomeElement = document.querySelector("#rome");
+  let RomeData = RomeElement.querySelector(".data");
+  let ora = RomeElement.querySelector(".ora");
+  let Rome = moment().tz("Europe/Rome");
 
-    RomeData.innerHTML= Rome.format("MMMM Do YYYY");
-    ora.innerHTML = Rome.format("h:mm:ss [<small>]A[</small>]");
+  RomeData.innerHTML = Rome.format("MMMM Do YYYY");
+  ora.innerHTML = Rome.format("h:mm:ss [<small>]A[</small>]");
 }
 updateRome();
 setInterval(updateRome, 1000);
 
-function updateLosAngeles(){
-    let losAngelesElement = document.querySelector("#los-angeles");
-    let losAngelesDateElement = losAngelesElement.querySelector(".data");
-    let losAngelesTimeElement = losAngelesElement.querySelector(".ora");
-    let losAngelesTime = moment().tz("America/Los_Angeles");
+function updateLosAngeles() {
+  let losAngelesElement = document.querySelector("#los-angeles");
+  let losAngelesDateElement = losAngelesElement.querySelector(".data");
+  let losAngelesTimeElement = losAngelesElement.querySelector(".ora");
+  let losAngelesTime = moment().tz("America/Los_Angeles");
 
-    losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
-    losAngelesTimeElement.innerHTML = losAngelesTime.format("h:mm:ss [<small>]A[</small>]" );
+  losAngelesDateElement.innerHTML = losAngelesTime.format("MMMM Do YYYY");
+  losAngelesTimeElement.innerHTML = losAngelesTime.format(
+    "h:mm:ss [<small>]A[</small>]"
+  );
 }
 updateLosAngeles();
 setInterval(updateLosAngeles, 1000);
@@ -33,7 +35,7 @@ function updateCity(event) {
   cities.innerHTML = `
   <div id="one_city">
    <div class="display">
-      <h2 class="NameCity">${cityName}</h2>
+      <h3 class="NameCity">${cityName}</h3>
       <div class="data">${cityTime.format("MMMM	Do YYYY")}</div>
     </div>
     <div class="ora">${cityTime.format("h:mm:ss")} <small>${cityTime.format(
